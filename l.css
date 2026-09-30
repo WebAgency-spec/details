@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background:
+        radial-gradient(circle at top, #182044, #05070d 55%);
+
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+
+    padding: 40px;
+
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.12);
+
+    border-radius: 20px;
+
+    backdrop-filter: blur(20px);
+
+    box-shadow:
+        0 0 50px rgba(0,217,255,0.08);
+}
+
+h1 {
+    text-align: center;
+
+    font-size: 28px;
+    letter-spacing: 4px;
+
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    text-align: center;
+
+    color: #8d96ad;
+
+    margin-bottom: 30px;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+
+    padding: 15px;
+
+    border-radius: 10px;
+    border: 1px solid #30384f;
+
+    outline: none;
+
+    background: #080b14;
+    color: white;
+
+    font-size: 16px;
+}
+
+input:focus {
+    border-color: #00d9ff;
+}
+
+button {
+    padding: 15px 22px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #7c5cff;
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 0 20px rgba(124,92,255,0.5);
+}
+
+.result {
+    margin-top: 30px;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    background: rgba(0,217,255,0.04);
+
+    border: 1px solid rgba(0,217,255,0.2);
+}
+
+.title {
+    color: #00d9ff;
+
+    letter-spacing: 3px;
+    font-weight: bold;
+
+    margin-bottom: 20px;
+}
+
+.details {
+    display: grid;
+    gap: 15px;
+}
+
+.details div {
+    display: flex;
+    justify-content: space-between;
+
+    padding-bottom: 10px;
+
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.details span {
+    color: #8d96ad;
+}
+
+.details b {
+    color: white;
+}
+
+.not-found {
+    margin-top: 25px;
+
+    text-align: center;
+
+    color: #ff5577;
+
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hidden {
+    display: none;
+}

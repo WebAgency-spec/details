@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ID Information System</title>
+
+    <link rel="stylesheet" href="l.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>ID INFORMATION SYSTEM</h1>
+        <p class="subtitle">Enter your ID</p>
+
+        <div class="search-box">
+            <input
+                type="text"
+                id="idInput"
+                placeholder="Enter ID..."
+            >
+
+            <button onclick="searchID()">
+                SEARCH
+            </button>
+        </div>
+
+        <div id="result" class="result hidden">
+
+            <div class="title">DETAILS</div>
+
+            <div class="details">
+                <div>
+                    <span>Name</span>
+                    <b id="name">---</b>
+                </div>
+
+                <div>
+                    <span>Surname</span>
+                    <b id="surname">---</b>
+                </div>
+
+                <div>
+                    <span>Father Name</span>
+                    <b id="father">---</b>
+                </div>
+
+                <div>
+                    <span>Age</span>
+                    <b id="age">---</b>
+                </div>
+
+                <div>
+                    <span>DOB</span>
+                    <b id="dob">---</b>
+                </div>
+
+                <div>
+                    <span>Division</span>
+                    <b id="division">---</b>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="notFound" class="not-found hidden">
+            ID NOT FOUND
+        </div>
+
+    </div>
+
+    <script src="k.js"></script>
+
+</body>
+</html>
